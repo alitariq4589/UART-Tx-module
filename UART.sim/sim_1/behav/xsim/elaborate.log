@@ -1,0 +1,16 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto c3864dc434bf4ebf87d28413490851a9 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot UART_Tx_test_behav xil_defaultlib.UART_Tx_test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.UART_Tx
+Compiling module xil_defaultlib.UART_clock
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.UART_Tx_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot UART_Tx_test_behav
