@@ -1,25 +1,34 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: 10xEngineers
+// Engineer: Ali Tariq
 // 
 // Create Date: 08/27/2022 10:34:18 PM
-// Design Name: 
-// Module Name: UART_Tx_test
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
+// Design Name: UART Protocol
+// Module Name: UART
+// Project Name: UART protocol Tx module
+// Target Devices: Arty A7 100tcsg324 FPGA
+// Tool Versions: Xilinx Vivado 2018.2
 // Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
+// 			->	This is top module of UART protocol
+// 			->	Each module needed is instantiated in it.
+// 			->	Currenlty (30-08-2022) it has Tx module only
+// 			->	Clock provided as input is divided to make half the frequency
+// 			->	Arty A7 100tcsg324 runs on 100MHz (see "Oscillators/Clocks" section on 
+// 								https://digilent.com/reference/programmable-logic/arty-a7/reference-manual)
+// 			->	So the frequency provided to UART Tx module is 50MHz
+// 			->	---PINOUT---
+// 				clock: 		E3
+// 				data_out: 	G13
+// 				reset:		D9
+// 				start:		C9
+// 				Tx_done:	H5
+// 				Tx_ready:	J5
+// Dependencies: These files are requried for this module: UART_clock_generator, UART_Tx, clock_divider
 // Revision 0.01 - File Created
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-/*
 //////////////////
 //Specifications//
 //////////////////
